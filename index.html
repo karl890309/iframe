@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <head>
-	
+	<script src = "http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+		type: "get",
+		headers: {
+		Accept: "application/json; charset=utf-8",
+		"Access-Control-Allow-Origin": "https://karl890309.github.io/iframe/",
+		},
+		success: function(data){setTime();},
+		url: "https://streamelements.com/overlay/6189f1d0d523d80c62cb035d/yIGtASf7RRj_0i8I9lKgF3UTd2T7uuuA0ACHWZw2pujMkkMK"
+		});
+		
+		function setTime(){
+			console.log("123");
+		}
+	</script>
 </head>
 
 <body>
-	<iframe src="https://streamelements.com/overlay/6189f1d0d523d80c62cb035d/yIGtASf7RRj_0i8I9lKgF3UTd2T7uuuA0ACHWZw2pujMkkMK"></iframe>
+	<div id="countdown"></div>
 
 </body>
 
